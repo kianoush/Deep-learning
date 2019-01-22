@@ -5,7 +5,7 @@ import torchvision.datasets as datasets
 import torchvision.transforms as T
 import bcolz
 
-
+# utils 
 def save_array(fname, arr): 
     c = bcolz.carray(arr, rootdir=fname, mode='w')
     c.flush()
