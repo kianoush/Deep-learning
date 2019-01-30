@@ -5,7 +5,7 @@ import torchvision.models as models
 
 
 use_gpu = torch.cuda.is_available()
-
+# Resnet 32
 def load_pretrained_resnet18(model_path=None, num_classes=10):
     if model_path is None:
         model = models.resnet18(pretrained=True)
