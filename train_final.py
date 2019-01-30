@@ -8,7 +8,7 @@ import tensorflow
 import keras
 
 
-
+# compute one epoch 
 def train_one_epoch(model, dataloder, criterion, optimizer, scheduler):
     if scheduler is not None:
         scheduler.step()
