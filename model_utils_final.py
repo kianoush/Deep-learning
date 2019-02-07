@@ -1,9 +1,10 @@
+
 # Model Utils
 import torch
 import torch.nn as nn
 import torchvision.models as models
 
-
+# GPU coda 
 use_gpu = torch.cuda.is_available()
 # Resnet 32
 def load_pretrained_resnet18(model_path=None, num_classes=10):
