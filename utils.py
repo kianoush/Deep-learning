@@ -20,7 +20,7 @@ def to_var(x, volatile=False):
         x = x.cuda()
     return Variable(x, volatile=volatile)
 
-
+# Transform Images
 def create_img_dataloader(image_folder, transform=None, batch_size=25, shuffle=False, num_workers=2):
     if transform is None:
         transform = T.Compose([
