@@ -4,6 +4,7 @@ from torch.autograd import Variable
 import torchvision.datasets as datasets
 import torchvision.transforms as T
 import bcolz
+import math
 
 # utils 
 def save_array(fname, arr): 
